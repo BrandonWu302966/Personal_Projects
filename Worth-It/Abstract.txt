@@ -1,0 +1,26 @@
+
+Error Based Matching:
+
+This program works similarly to Tinder except with food profiles rather than people. The match system is different in that there is not only
+matches and non-matches, but there is a rank that evaluates user's attractiveness to a food item. The attractiveness is dependent on how
+much the user over-valued the food item. If the user believed the item was at a higher price than its actual price, the user is determined
+to be attracted to the food item. The rank of the item is dependent on the magnitude of over-estimation by the user on the item. If the user
+under-estimated the price of the food item, the food item is to have negative attractiveness. The magnitude of overestimation or
+underestimation could be measured by difference between the estimated price and the exact price but the ranking system would be inaccurate
+in distinguishing a greater magnitude of over-estimation between cheap foods and expensive foods. The formula for percent error is used to 
+measure the value of overestimation while taking into consideration the price ranges of food.
+
+
+Filtering the Library:
+
+Ranking based on error is the elementary method for which the "match board" will be structured. The datasets that are used in the matching
+process can be further filtered based on additional variables such as "Mealtime Type" in which the types are Breakfast, Lunch, Dinner, 
+Dessert, and Beverage, etc.. This form of filtering narrows the preference of the user so that the user does not have to estimate meals
+that do not suit their appetite at the current moment. Filtering is a large scale function.
+
+
+Optional Preference Capture:
+
+Machine Learning can be used within each filtered dataset so that the preference of the user is more accurately captured. However, the
+downside to capturing a single preference of the user is that diversity is often desired by the user. The system may conclude that the user
+prefers a single style of dinner-time food. However, the user may feel like eating something new that day. 
