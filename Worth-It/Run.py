@@ -40,8 +40,3 @@ output = Final_Lib.join("Menu Item", error_table)
 print(output)
 
 
-
-# %%
-print(plt.hist(output.column("Error")))
-plt.show()
-# %%
