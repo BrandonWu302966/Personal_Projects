@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Worth-It</title>
+      <title>change picture</title>
+      <form class="query-form">          
+
+        <script type = "text/javascript">
+            function displayNextImage() {
+                x = (x === images.length - 1) ? 0 : x + 1;
+                document.getElementById("img").src = images[x];
+            }
+
+            function displayPreviousImage() {
+                x = (x <= 0) ? images.length - 1 : x - 1;
+                document.getElementById("img").src = images[x];
+            }
+            var images = [], x = -1;
+            images[0] = "French_fries.jpg";
+            images[1] = "Hamburger.jpeg";
+        </script>
+        </form>
+   </head>
+
+   <body>
+    <h1> Worth-It</h1>
+        <h4> What is the price of this food item?</h4>
+       <img id="img" src="French_fries.jpg" height = "300" width = "400"/>
+       <div>
+        <button type="button" onclick="displayNextImage()">Skip</button>
+       </div>
+       
+       <div>
+            <label for="Min">0</label>
+            <input type="range" id="Price" name="price" min="0" max="100">
+            <label for="Max">100</label>
+            <label for="Price">Price</label>
+        </div>
+        <div>
+            <button type="button" onclick="displayPreviousImage()">Swipe</button>
+        </div>
+   </body>
+</html>

@@ -1,0 +1,43 @@
+/* HTML object based styling */
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    color: black
+    
+}
+
+.heads {
+    text-align: center;
+    margin-right: 60%;
+    color: white
+}
+
+.Done {
+    color: white
+
+}
+
+button {
+    margin-top: 20px;
+    margin-left: 17%;
+    padding: 10px;
+}
+
+.mainpage {
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.query-form {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.form-inputs {
+    margin-top: 15px;
+    margin-left: 10%;
+    color: white
+    
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Worth-It</title>
+      <title>change picture</title>
+      <form class="query-form">          
+
+        <script type = "text/javascript">
+            function displayNextImage() {
+                x = (x === images.length - 1) ? 0 : x + 1;
+                document.getElementById("img").src = images[x];
+            }
+
+            function displayPreviousImage() {
+                x = (x <= 0) ? images.length - 1 : x - 1;
+                document.getElementById("img").src = images[x];
+            }
+            var images = [], x = -1;
+            images[0] = "Photos/French_fries.jpg";
+            images[1] = "Photos/Hamburger.jpeg";
+            images[2] = "Photos/BK_Udon.jpeg";
+            images[3] = "Photos/Cheese_Burger.jpeg";
+            images[4] = "Photos/Chicken_Nuggets.jpeg";
+            images[5] = "Photos/Crispy.jpeg";
+            images[6] = "Photos/Tempura.jpeg";
+            images[7] = "Photos/Curry_Udon.jpeg";
+            images[8] = "Photos/Big_Mac.jpeg";
+            images[9] = "Photos/McFlurry.jpeg";
+            images[10] = "Photos/Happy_Meal.jpeg";
+        </script>
+        </form>
+   </head>
+
+   <body class="mainpage">
+    <div class="heads">
+        <h1> Worth-It</h1>
+        <h4> What is the price of this food item?</h4>
+    </div>
+       <img id="img" src="Photos/logo.jpeg" height = "300" width = "400"/>
+       <div>
+        <button type="button" onclick="displayNextImage()">Skip</button>
+       </div>
+       
+       <div class="form-inputs">
+            <label for="Min">0</label>
+            <input type="range" value="50" id="Price" name="price" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+            <output></output>
+            <label for="Max">100</label>
+            <label for="Price">Price</label>
+        </div>
+        <div>
+            <button type="button" onclick="record(event)">Swipe</button>
+            <a href="Leaderboard.html" class="Done"> Done? </a>
+        </div>
+   </body>
+</html>
