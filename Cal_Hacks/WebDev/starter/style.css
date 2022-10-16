@@ -1,0 +1,34 @@
+/* HTML object based styling */
+body {
+    background-image: url(photos/spider-man-art.jpeg);
+    background-size: cover;
+    background-attachment:fixed;
+    color: white
+    
+}
+
+label {
+    padding-right: 10px
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* class based styling */
+.mainpage {
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.query-form {
+    margin-top: 50px
+    
+}
+
+.form-inputs {
+    margin-top: 15px;
+    
+}
+
